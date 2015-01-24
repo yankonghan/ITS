@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ITS_Manage.BOL.BLL;
+using ITS_Manage.DAL;
+using ITS_Manage.DAL.DBUtility;
+using ITS_Manage.Model;
+using ITS_Manage.COMMON;
 using System.Data;
 using GMap.NET;
 using CTTC_ITS_Manage.MainClass;

@@ -11,7 +11,10 @@ using DevExpress.UserSkins;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Helpers;
-using ITS_Manage.BOL.BLL;
+using ITS_Manage.DAL;
+using ITS_Manage.DAL.DBUtility;
+using ITS_Manage.Model;
+using ITS_Manage.COMMON;
 using System.Configuration;
 using CTTC_ITS_Manage.MainClass;
 using CTTC_ITS_Manage.Forms;
@@ -496,7 +499,7 @@ namespace CTTC_ITS_Manage
 
                 #region 加载线路列表
 
-                DataTable dt = Line.SelectLineInfo();
+                DataTable dt = ITS_Manage.DAL.Line.SelectLineInfo();
                 TreeNode[] Lineroot = new TreeNode[dt.Rows.Count];
 
                 for (int i = 0; i < dt.Rows.Count; i++)
@@ -519,7 +522,7 @@ namespace CTTC_ITS_Manage
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = ManageOnlineTree.Nodes[0].Nodes[j].Text.Trim();
-                    Bus[] BusArrayForTree = Bus.SelectBusArray(lineID);
+                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.DAL.Bus.SelectBusArray(lineID);
                     if (BusArrayForTree.Length == 0)
                     {
                         continue;
@@ -558,7 +561,7 @@ namespace CTTC_ITS_Manage
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = ManageOnlineTree.Nodes[0].Nodes[j].Text.Trim();
-                    Station[] StationArrayForTree = Station.SelectStationLineArray(lineID);
+                    ITS_Manage.Model.Station[] StationArrayForTree = ITS_Manage.DAL.Station.SelectStationLineArray(lineID);
                     if (StationArrayForTree.Length == 0)
                     {
                         continue;
@@ -616,7 +619,7 @@ namespace CTTC_ITS_Manage
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = HistoryRecordTree.Nodes[j].Text.Trim();
-                    Bus[] BusArrayForTree = Bus.SelectBusArray(lineID);
+                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.DAL.Bus.SelectBusArray(lineID);
                     if (BusArrayForTree.Length == 0)
                     {
                         continue;
@@ -673,9 +676,9 @@ namespace CTTC_ITS_Manage
         private void ShowLineC(object theline)
         {
             LineStationInfo line = (LineStationInfo)theline;
-            while (LineWCArray.Contains(line.LineID))
+            while (LineWCArray.Contains(line.LineID))  
             {
-                MainMapOpration.ShowBusOnLine(BusRealInfo.GetBusRealInfoList(line.LineID), line.LineID);
+                MainMapOpration.ShowBusOnLine(ITS_Manage.DAL.BusRealInfo.GetBusRealInfoList(line.LineID), line.LineID);
             }
             if (!LineWCArray.Contains(line.LineID))
             {

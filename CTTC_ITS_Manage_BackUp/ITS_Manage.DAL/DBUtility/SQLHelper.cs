@@ -7,7 +7,7 @@ using System.Data;
 using System.Configuration;
 using System.Collections;
 
-namespace ITS_Manage.BOL.BLL
+namespace ITS_Manage.DAL.DBUtility
 {
     public class SQLHelper
     {

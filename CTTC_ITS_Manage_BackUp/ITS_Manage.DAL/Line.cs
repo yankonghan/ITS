@@ -1,22 +1,23 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
 using System.Windows.Forms;
+using ITS_Manage.Model;
+using ITS_Manage.DAL.DBUtility;
+using System.Threading.Tasks;
 
-namespace ITS_Manage.BOL.BLL
+namespace ITS_Manage.DAL
 {
-    public class Line
+    public partial class Line
     {
-        public string LineName { get; set; }
-
         /// <summary>
         /// 精确查找Line表
         /// </summary>
         /// <param name="thePerson">查询条件</param>
         /// <returns>person的list</returns>
-        public static DataTable SelectLineInfo(Bus theBus)
+        public static DataTable SelectLineInfo(Model.Bus theBus)
         {
             DataTable BusDataTable = null;
 

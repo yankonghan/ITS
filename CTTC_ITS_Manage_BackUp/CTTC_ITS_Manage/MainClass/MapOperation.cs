@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ITS_Manage.BOL.BLL;
+using ITS_Manage.DAL;
+using ITS_Manage.DAL.DBUtility;
+using ITS_Manage.Model;
+using ITS_Manage.COMMON;
 using GMap.NET.WindowsForms;
 using GMap.NET;
 using System.Windows.Forms;
@@ -281,7 +284,7 @@ namespace CTTC_ITS_Manage.MainClass
         /// 在地图上显示在线车辆
         /// </summary>
         /// <param name="LineBusRealTime">在线车辆列表</param>
-        public void ShowBusOnLine(List<BusRealInfo> LineBusRealTime, string LineID)
+        public void ShowBusOnLine(List<ITS_Manage.Model.BusRealInfo> LineBusRealTime, string LineID)
         {
             lock (this)
             {
@@ -308,7 +311,7 @@ namespace CTTC_ITS_Manage.MainClass
             while (true)
             {
                 this.routeOverlay.Markers.Clear();
-                ShowBusOnLine(BusRealInfo.GetBusRealInfoList(ttline.LineID), ttline.LineID);
+                ShowBusOnLine(ITS_Manage.DAL.BusRealInfo.GetBusRealInfoList(ttline.LineID), ttline.LineID);
             }
         }
 

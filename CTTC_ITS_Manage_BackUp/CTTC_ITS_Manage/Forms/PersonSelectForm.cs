@@ -7,7 +7,10 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using CTTC_ITS_Manage.UserControl;
-using ITS_Manage.BOL.BLL;
+using ITS_Manage.Model;
+using ITS_Manage.DAL;
+using ITS_Manage.DAL.DBUtility;
+using ITS_Manage.COMMON;
 using System.Data.SqlClient;
 
 namespace CTTC_ITS_Manage.Forms
