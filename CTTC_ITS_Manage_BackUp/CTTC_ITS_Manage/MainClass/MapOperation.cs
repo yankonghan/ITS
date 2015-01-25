@@ -226,7 +226,7 @@ namespace CTTC_ITS_Manage.MainClass
         /// 地图显示线路
         /// </summary>
         /// <param name="Line">指定线路</param>
-        public void ShowLine(LineStationInfo Line)
+        public void ShowLine(ITS_Manage.Model.LineStationInfo Line)
         {
             for (int i = 0; i < Line.StationLatLngUp.Length - 1; i++)//在各个站点间画线
             {
@@ -262,7 +262,7 @@ namespace CTTC_ITS_Manage.MainClass
         /// 遍历找到指定的站点线路
         /// </summary>
         /// <param name="line"></param>
-        public void StopShowLine(LineStationInfo line)
+        public void StopShowLine(ITS_Manage.Model.LineStationInfo line)
         {
             try
             {
@@ -307,7 +307,7 @@ namespace CTTC_ITS_Manage.MainClass
 
         public void ShowLineC(object theline)
         {
-            LineStationInfo ttline = (LineStationInfo)theline;
+            ITS_Manage.Model.LineStationInfo ttline = (ITS_Manage.Model.LineStationInfo)theline;
             while (true)
             {
                 this.routeOverlay.Markers.Clear();
@@ -320,9 +320,9 @@ namespace CTTC_ITS_Manage.MainClass
         /// </summary>
         /// <param name="StopArray">站点坐标数组</param>
         /// <returns>线路信息</returns>
-        public static LineStationInfo GetDistanceArray(PointLatLng[] StopArray)
+        public static ITS_Manage.Model.LineStationInfo GetDistanceArray(PointLatLng[] StopArray)
         {
-            LineStationInfo theLine = new LineStationInfo();
+            ITS_Manage.Model.LineStationInfo theLine = new ITS_Manage.Model.LineStationInfo();
             if (StopArray.Length <= 1)
             {
                 return null;

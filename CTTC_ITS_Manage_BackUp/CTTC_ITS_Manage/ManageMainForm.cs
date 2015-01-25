@@ -25,7 +25,7 @@ using System.Threading;
 
 namespace CTTC_ITS_Manage
 {
-    public delegate void ShowLineCHandler(LineStationInfo line);
+    public delegate void ShowLineCHandler(ITS_Manage.Model.LineStationInfo line);
 
     public partial class ManageMainForm : RibbonForm
     {
@@ -64,14 +64,16 @@ namespace CTTC_ITS_Manage
             LineWCArray = new List<string>();
             IsLineCStop = new List<string>();
             LineCTask = new List<Task>();
-            SLCH += ShowLineC;
+          /*由于下面的ShowLineC尚未完成，故先注释
+           * */
+            //  SLCH += ShowLineC;
             InitializeComponent();
         }
         /// <summary>
         /// 显示指定线路的直线图
         /// </summary>
         /// <param name="Line">线路</param>
-        private void ShowLineStreet(LineStationInfo Line)
+        private void ShowLineStreet(ITS_Manage.Model.LineStationInfo Line)
         {
             StreetLineXtraPage = new DevExpress.XtraTab.XtraTabPage();
             StreetLineXtraPage.SuspendLayout();
@@ -433,22 +435,22 @@ namespace CTTC_ITS_Manage
             {
                 case "查看线路直线图":
 
-                    LineStationInfo lineStreet = new LineStationInfo();
+                    ITS_Manage.Model.LineStationInfo lineStreet = new ITS_Manage.Model.LineStationInfo();
                     lineStreet.LineID = LineIDForLineStreet;
-                    lineStreet.StationLatLngUp = LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.UP);
-                    lineStreet.StationLatLngDown = LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.DOWN);
+                    lineStreet.StationLatLngUp = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.UP);
+                    lineStreet.StationLatLngDown = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.DOWN);
                     lineStreet.UpDistance = MapOperation.GetDistanceArray(lineStreet.StationLatLngUp).UpDistance;
                     lineStreet.DownDistance = MapOperation.GetDistanceArray(lineStreet.StationLatLngUp).DownDistance;
-                    lineStreet.UpStationName = LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.UP);
-                    lineStreet.DownStationName = LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.DOWN);
+                    lineStreet.UpStationName = ITS_Manage.DAL.LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.UP);
+                    lineStreet.DownStationName = ITS_Manage.DAL.LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.DOWN);
                     ShowLineStreet(lineStreet);
 
                     break;
                 case "地图监控线路(车辆)":
 
-                    LineStationInfo line = new LineStationInfo();
+                    ITS_Manage.Model.LineStationInfo line = new ITS_Manage.Model.LineStationInfo();
                     line.LineID = LineIDForLineStreet;
-                    line.StationLatLngUp = LineStationInfo.GetLineStationLatLng(line.LineID, Forward.UP);
+                    line.StationLatLngUp = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(line.LineID, Forward.UP);
 
                     
                     MainMapOpration.ShowLine(line);
@@ -462,7 +464,7 @@ namespace CTTC_ITS_Manage
 
                     break;
                 case "停止地图监控(车辆)":
-                    LineStationInfo lineStop = new LineStationInfo();
+                    ITS_Manage.Model.LineStationInfo lineStop = new ITS_Manage.Model.LineStationInfo();
                     lineStop.LineID = LineIDForLineStreet;
                     MainMapOpration.StopShowLine(lineStop);
 
@@ -672,19 +674,20 @@ namespace CTTC_ITS_Manage
 
 
         #region 线程
-
-        private void ShowLineC(object theline)
-        {
-            LineStationInfo line = (LineStationInfo)theline;
-            while (LineWCArray.Contains(line.LineID))  
-            {
-                MainMapOpration.ShowBusOnLine(ITS_Manage.DAL.BusRealInfo.GetBusRealInfoList(line.LineID), line.LineID);
-            }
-            if (!LineWCArray.Contains(line.LineID))
-            {
-                return;
-            }
-        }
+        /*有问题部分，需等数据库设计完之后再更改
+         * */
+        //private void ShowLineC(object theline)
+        //{
+        //    ITS_Manage.Model.LineStationInfo line = (ITS_Manage.Model.LineStationInfo)theline;
+        //    while (LineWCArray.Contains(line.LineID))  
+        //    {
+        //        MainMapOpration.ShowBusOnLine(ITS_Manage.DAL.BusRealInfo.GetBusRealInfoList(line.LineID), line.LineID);
+        //    }
+        //    if (!LineWCArray.Contains(line.LineID))
+        //    {
+        //        return;
+        //    }
+        //}
 
         #endregion
 
