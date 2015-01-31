@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ITS_Manage.DAL;
 using ITS_Manage.DAL.DBUtility;
 using ITS_Manage.Model;
 using ITS_Manage.COMMON;
@@ -226,7 +225,7 @@ namespace CTTC_ITS_Manage.MainClass
         /// 地图显示线路
         /// </summary>
         /// <param name="Line">指定线路</param>
-        public void ShowLine(ITS_Manage.Model.LineStationInfo Line)
+        public void ShowLine(ITS_Manage.Model.LineStation Line)
         {
             for (int i = 0; i < Line.StationLatLngUp.Length - 1; i++)//在各个站点间画线
             {
@@ -243,7 +242,7 @@ namespace CTTC_ITS_Manage.MainClass
                 }
                 if (theRouteToShow != null)
                 {
-                    GMapRoute r = new GMapRoute(theRouteToShow.Points, Line.LineID);
+                    GMapRoute r = new GMapRoute(theRouteToShow.Points, Line.lineID);
                     r.Stroke.Width = 5;
                     r.Stroke.Color = Color.Tomato;
                     this.RouteOverlay.Routes.Add(r);
@@ -262,13 +261,13 @@ namespace CTTC_ITS_Manage.MainClass
         /// 遍历找到指定的站点线路
         /// </summary>
         /// <param name="line"></param>
-        public void StopShowLine(ITS_Manage.Model.LineStationInfo line)
+        public void StopShowLine(ITS_Manage.Model.LineStation line)
         {
             try
             {
                 for (int i = 0; i < this.routeOverlay.Routes.Count; i++)
                 {
-                    if (this.routeOverlay.Routes[i].Name == line.LineID)
+                    if (this.routeOverlay.Routes[i].Name == line.lineID)
                     {
                         this.routeOverlay.Routes[i].IsVisible = false;
                     }
@@ -284,7 +283,7 @@ namespace CTTC_ITS_Manage.MainClass
         /// 在地图上显示在线车辆
         /// </summary>
         /// <param name="LineBusRealTime">在线车辆列表</param>
-        public void ShowBusOnLine(List<ITS_Manage.Model.BusRealInfo> LineBusRealTime, string LineID)
+        public void ShowBusOnLine(List<ITS_Manage.Model.RunInfo> LineBusRealTime, string LineID)
         {
             lock (this)
             {
@@ -296,8 +295,8 @@ namespace CTTC_ITS_Manage.MainClass
 
                 for (int i = 0; i < LineBusRealTime.Count; i++)
                 {
-                    GMapMarkerGoogleRed busReal = new GMapMarkerGoogleRed(new PointLatLng(LineBusRealTime[i].Lat, LineBusRealTime[i].Lng));
-                    busReal.ToolTipText = LineBusRealTime[i].BusID;
+                    GMapMarkerGoogleRed busReal = new GMapMarkerGoogleRed(new PointLatLng(Convert.ToDouble(LineBusRealTime[i].lat), Convert.ToDouble(LineBusRealTime[i].lng)));
+                    busReal.ToolTipText = LineBusRealTime[i].busID;
                     busReal.ToolTipMode = MarkerTooltipMode.OnMouseOver;
                     busReal.IsVisible = true;
                     this.RouteOverlay.Markers.Add(busReal);
@@ -307,22 +306,23 @@ namespace CTTC_ITS_Manage.MainClass
 
         public void ShowLineC(object theline)
         {
-            ITS_Manage.Model.LineStationInfo ttline = (ITS_Manage.Model.LineStationInfo)theline;
+            ITS_Manage.Model.LineStation ttline = (ITS_Manage.Model.LineStation)theline;
             while (true)
             {
                 this.routeOverlay.Markers.Clear();
-                ShowBusOnLine(ITS_Manage.DAL.BusRealInfo.GetBusRealInfoList(ttline.LineID), ttline.LineID);
+                ShowBusOnLine(ITS_Manage.DAL.RunInfoService.GetRunInfoList(ttline.lineID), ttline.lineID);
             }
         }
+       
 
         /// <summary>
         /// 获取线路距离列表
         /// </summary>
         /// <param name="StopArray">站点坐标数组</param>
         /// <returns>线路信息</returns>
-        public static ITS_Manage.Model.LineStationInfo GetDistanceArray(PointLatLng[] StopArray)
+        public static ITS_Manage.Model.LineStation GetDistanceArray(PointLatLng[] StopArray)
         {
-            ITS_Manage.Model.LineStationInfo theLine = new ITS_Manage.Model.LineStationInfo();
+            ITS_Manage.Model.LineStation theLine = new ITS_Manage.Model.LineStation();
             if (StopArray.Length <= 1)
             {
                 return null;

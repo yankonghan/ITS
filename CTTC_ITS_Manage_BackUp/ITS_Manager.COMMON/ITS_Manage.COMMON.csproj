@@ -7,7 +7,7 @@
     <ProjectGuid>{C48CF57A-C20C-4EEF-9CB0-3A4CD51FE640}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ITS_Manager.COMMON</RootNamespace>
+    <RootNamespace>ITS_Manage.COMMON</RootNamespace>
     <AssemblyName>ITS_Manager.COMMON</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -25,7 +25,7 @@ using System.Threading;
 
 namespace CTTC_ITS_Manage
 {
-    public delegate void ShowLineCHandler(ITS_Manage.Model.LineStationInfo line);
+    public delegate void ShowLineCHandler(ITS_Manage.Model.LineStation line);
 
     public partial class ManageMainForm : RibbonForm
     {
@@ -73,7 +73,7 @@ namespace CTTC_ITS_Manage
         /// 显示指定线路的直线图
         /// </summary>
         /// <param name="Line">线路</param>
-        private void ShowLineStreet(ITS_Manage.Model.LineStationInfo Line)
+        private void ShowLineStreet(ITS_Manage.Model.LineStation Line)
         {
             StreetLineXtraPage = new DevExpress.XtraTab.XtraTabPage();
             StreetLineXtraPage.SuspendLayout();
@@ -81,10 +81,10 @@ namespace CTTC_ITS_Manage
 
             this.StreetLineXtraPage.Name = "StreetLineTabPage";
             this.StreetLineXtraPage.Size = new System.Drawing.Size(847, 518);
-            this.StreetLineXtraPage.Text = Line.LineID + "线路直线图";
+            this.StreetLineXtraPage.Text = Line.lineID + "线路直线图";
             this.StreetLineXtraPage.ResumeLayout(false);
 
-            this.LineControl = new StreetLineControl(Line.UpDistance, Line.DownDistance, Line.UpStationName, Line.DownStationName, Line.LineID);
+            this.LineControl = new StreetLineControl(Line.UpDistance, Line.DownDistance, Line.UpStationName, Line.DownStationName, Line.lineID);
             this.StreetLineXtraPage.Controls.Add(this.LineControl);
             this.LineControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LineControl.Location = new System.Drawing.Point(0, 0);
@@ -435,26 +435,26 @@ namespace CTTC_ITS_Manage
             {
                 case "查看线路直线图":
 
-                    ITS_Manage.Model.LineStationInfo lineStreet = new ITS_Manage.Model.LineStationInfo();
-                    lineStreet.LineID = LineIDForLineStreet;
-                    lineStreet.StationLatLngUp = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.UP);
-                    lineStreet.StationLatLngDown = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(LineIDForLineStreet, Forward.DOWN);
+                    ITS_Manage.Model.LineStation lineStreet = new ITS_Manage.Model.LineStation();
+                    lineStreet.lineID = LineIDForLineStreet;
+                    lineStreet.StationLatLngUp = ITS_Manage.DAL.LineStationService.GetLineStationLatLng(LineIDForLineStreet, Forward.UP);
+                    lineStreet.StationLatLngDown = ITS_Manage.DAL.LineStationService.GetLineStationLatLng(LineIDForLineStreet, Forward.DOWN);
                     lineStreet.UpDistance = MapOperation.GetDistanceArray(lineStreet.StationLatLngUp).UpDistance;
                     lineStreet.DownDistance = MapOperation.GetDistanceArray(lineStreet.StationLatLngUp).DownDistance;
-                    lineStreet.UpStationName = ITS_Manage.DAL.LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.UP);
-                    lineStreet.DownStationName = ITS_Manage.DAL.LineStationInfo.GetLineStationName(LineIDForLineStreet, Forward.DOWN);
+                    lineStreet.UpStationName = ITS_Manage.DAL.LineStationService.GetLineStationName(LineIDForLineStreet, Forward.UP);
+                    lineStreet.DownStationName = ITS_Manage.DAL.LineStationService.GetLineStationName(LineIDForLineStreet, Forward.DOWN);
                     ShowLineStreet(lineStreet);
 
                     break;
                 case "地图监控线路(车辆)":
 
-                    ITS_Manage.Model.LineStationInfo line = new ITS_Manage.Model.LineStationInfo();
-                    line.LineID = LineIDForLineStreet;
-                    line.StationLatLngUp = ITS_Manage.DAL.LineStationInfo.GetLineStationLatLng(line.LineID, Forward.UP);
+                    ITS_Manage.Model.LineStation line = new ITS_Manage.Model.LineStation();
+                    line.lineID = LineIDForLineStreet;
+                    line.StationLatLngUp = ITS_Manage.DAL.LineStationService.GetLineStationLatLng(line.lineID, Forward.UP);
 
                     
                     MainMapOpration.ShowLine(line);
-                    LineWCArray.Add(line.LineID);
+                    LineWCArray.Add(line.lineID);
                     //Task LineCControl = new Task(ShowLineC,line,TaskCreationOptions.PreferFairness | TaskCreationOptions.LongRunning | TaskCreationOptions.AttachedToParent);
 
                     //LineCControl.Start();
@@ -464,13 +464,13 @@ namespace CTTC_ITS_Manage
 
                     break;
                 case "停止地图监控(车辆)":
-                    ITS_Manage.Model.LineStationInfo lineStop = new ITS_Manage.Model.LineStationInfo();
-                    lineStop.LineID = LineIDForLineStreet;
+                    ITS_Manage.Model.LineStation lineStop = new ITS_Manage.Model.LineStation();
+                    lineStop.lineID = LineIDForLineStreet;
                     MainMapOpration.StopShowLine(lineStop);
 
                     LineWCArray.RemoveAll(name =>
                     {
-                        if (name ==lineStop.LineID)
+                        if (name ==lineStop.lineID)
                         {
                             return true;
                         }
@@ -501,7 +501,7 @@ namespace CTTC_ITS_Manage
 
                 #region 加载线路列表
 
-                DataTable dt = ITS_Manage.DAL.Line.SelectLineInfo();
+                DataTable dt = ITS_Manage.DAL.LineService.SelectLineInfo();
                 TreeNode[] Lineroot = new TreeNode[dt.Rows.Count];
 
                 for (int i = 0; i < dt.Rows.Count; i++)
@@ -524,7 +524,7 @@ namespace CTTC_ITS_Manage
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = ManageOnlineTree.Nodes[0].Nodes[j].Text.Trim();
-                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.DAL.Bus.SelectBusArray(lineID);
+                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.DAL.BusService.SelectBusArray(lineID);
                     if (BusArrayForTree.Length == 0)
                     {
                         continue;
@@ -533,18 +533,18 @@ namespace CTTC_ITS_Manage
                     for (int i = 0; i < BusArrayForTree.Length; i++)
                     {
 
-                        BusNodes[i] = new TreeNode(BusArrayForTree[i].BusID);
+                        BusNodes[i] = new TreeNode(BusArrayForTree[i].busID);
 
-                        if (BusArrayForTree[i].IsOnline == true)
+                        if (BusArrayForTree[i].isOnline == true)
                         {
-                            BusNodes[i].Text = BusArrayForTree[i].BusID.Trim() + "[在线]";
+                            BusNodes[i].Text = BusArrayForTree[i].busID.Trim() + "[在线]";
                         }
                         else
                         {
-                            BusNodes[i].Text = BusArrayForTree[i].BusID;
+                            BusNodes[i].Text = BusArrayForTree[i].busID;
                         }
                         this.ManageOnlineTree.Nodes[0].Nodes[j].Nodes.Add(BusNodes[i].Text, BusNodes[i].Text);
-                        if (BusArrayForTree[i].IsOnline == true)
+                        if (BusArrayForTree[i].isOnline == true)
                         {
                             this.ManageOnlineTree.Nodes[0].Nodes[j].Nodes[i].ForeColor = Color.Green;
                             this.ManageOnlineTree.Nodes[0].Nodes[j].Nodes[i].Tag = "在线监控|车辆|在线";
@@ -557,13 +557,17 @@ namespace CTTC_ITS_Manage
                 }
 
                 #endregion
-
+               
                 #region 加载站点列表
+                /*此处需要较大修改，主要是数据库中的Station并没有isOnline。。因此将暂时默认为站点全为isOnline
+                 * 站点需要什么isOnline吗？不是通过卫星定位的嘛。。额，暂时不清楚，如果要Station里添加isOnline，需要改DAL，Model，BLL
+                 * 等多处的方法，真麻烦！！！！！！！！！！！！！！！！
+                 * */
 
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = ManageOnlineTree.Nodes[0].Nodes[j].Text.Trim();
-                    ITS_Manage.Model.Station[] StationArrayForTree = ITS_Manage.DAL.Station.SelectStationLineArray(lineID);
+                    ITS_Manage.Model.Station[] StationArrayForTree = ITS_Manage.DAL.StationService.SelectStationLineArray(lineID);
                     if (StationArrayForTree.Length == 0)
                     {
                         continue;
@@ -572,26 +576,26 @@ namespace CTTC_ITS_Manage
                     for (int i = 0; i < StationArrayForTree.Length; i++)
                     {
 
-                        StationNodes[i] = new TreeNode(StationArrayForTree[i].StationName);
+                        StationNodes[i] = new TreeNode(StationArrayForTree[i].stationName);
 
-                        if (StationArrayForTree[i].IsOnline == true)
-                        {
-                            StationNodes[i].Text = StationArrayForTree[i].StationName.Trim() + "[在线]";
-                        }
-                        else
-                        {
-                            StationNodes[i].Text = StationArrayForTree[i].StationName;
-                        }
+                        //if (StationArrayForTree[i].isOnline == true)
+                        //{
+                            StationNodes[i].Text = StationArrayForTree[i].stationName.Trim() + "[在线]";
+                        //}
+                        //else
+                        //{
+                        //    StationNodes[i].Text = StationArrayForTree[i].stationName;
+                        //}
                         this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes.Add(StationNodes[i].Text, StationNodes[i].Text);
-                        if (StationArrayForTree[i].IsOnline == true)
-                        {
+                        //if (StationArrayForTree[i].isOnline == true)
+                        //{
                             this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].ForeColor = Color.Green;
                             this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|在线";
-                        }
-                        else
-                        {
-                            this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|离线";
-                        }
+                        //}
+                        //else
+                        //{
+                        //    this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|离线";
+                        //}
                     }
                 }
 
@@ -621,7 +625,8 @@ namespace CTTC_ITS_Manage
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
                     string lineID = HistoryRecordTree.Nodes[j].Text.Trim();
-                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.DAL.Bus.SelectBusArray(lineID);
+                  
+                    ITS_Manage.Model.Bus[] BusArrayForTree = ITS_Manage.BLL.BusManage.SelectBusArray(lineID);
                     if (BusArrayForTree.Length == 0)
                     {
                         continue;
@@ -630,9 +635,9 @@ namespace CTTC_ITS_Manage
                     for (int i = 0; i < BusArrayForTree.Length; i++)
                     {
 
-                        BusNodes[i] = new TreeNode(BusArrayForTree[i].BusID);
+                        BusNodes[i] = new TreeNode(BusArrayForTree[i].busID);
 
-                        BusNodes[i].Text = BusArrayForTree[i].BusID;
+                        BusNodes[i].Text = BusArrayForTree[i].busID;
 
                         this.HistoryRecordTree.Nodes[j].Nodes.Add(BusNodes[i].Text, BusNodes[i].Text);
                         this.HistoryRecordTree.Nodes[j].Nodes[i].Tag = "历史记录|车辆";

@@ -1,173 +1,70 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ITS_Manage.Model
 {
+    /// <summary>
+    /// station:实体类(属性说明自动提取数据库字段的描述信息)
+    /// </summary>
     [Serializable]
-    public partial class Station
+    public class Station
     {
+        public Station()
+        { }
+        #region Model
+        private string _stationid;
+        private string _stationname;
+        private decimal? _lat;
+        private decimal? _lng;
         /// <summary>
-        /// 站点ID
+        /// 
         /// </summary>
-        private string stationID;
-
-        public string StationID
+        public string stationID
         {
-            set
-            {
-                stationID = value;
-            }
-            get
-            {
-                return stationID;
-            }
-        }
-        /// <summary>
-        /// 站点名称
-        /// </summary>
-        private string stationName;
-
-        public string StationName
-        {
-            get
-            {
-                return stationName;
-            }
-            set
-            {
-                stationName = value;
-            }
+            set { _stationid = value; }
+            get { return _stationid; }
         }
         /// <summary>
-        /// 负责人姓名
+        /// 
         /// </summary>
-        private string chargeManID;
-
-        public string ChargeManID
+        public string stationName
         {
-            set
-            {
-                chargeManID = value;
-            }
-            get
-            {
-                return chargeManID;
-            }
+            set { _stationname = value; }
+            get { return _stationname; }
         }
         /// <summary>
-        /// 是否在线
+        /// 
         /// </summary>
-        private bool isOnline;
-
-        public bool IsOnline
+        public decimal? lat
         {
-            set
-            {
-                isOnline = value;
-            }
-            get
-            {
-                return isOnline;
-            }
+            set { _lat = value; }
+            get { return _lat; }
         }
         /// <summary>
-        /// 纬度
+        /// 
         /// </summary>
-        private double lat;
-
-        public double Lat
+        public decimal? lng
         {
-            set
-            {
-                lat = value;
-            }
-            get
-            {
-                return lat;
-            }
+            set { _lng = value; }
+            get { return _lng; }
         }
-        /// <summary>
-        /// 经度
-        /// </summary>
-        private double lng;
+        #endregion Model
 
-        public double Lng
-        {
-            get
-            {
-                return lng;
-            }
-            set
-            {
-                lng = value;
-            }
-        }
-        /// <summary>
-        /// 建站时间
-        /// </summary>
-        private DateTime buildTime;
-
-        public DateTime BuildTime
-        {
-            set
-            {
-                buildTime = value;
-            }
-            get
-            {
-                return buildTime;
-            }
-        }
-        /// <summary>
-        /// 站点信息
-        /// </summary>
-        private string stationInfo;
-
-        public string StationInfo
-        {
-            get
-            {
-                return stationInfo;
-            }
-            set
-            {
-                stationInfo = value;
-            }
-        }
-        /// <summary>
-        /// 备注
-        /// </summary>
-        private string remark;
-
-        public string Remark
-        {
-            set
-            {
-                remark = value;
-            }
-            get
-            {
-                return remark;
-            }
-        }
-        public Station() 
-        {
-
-        }
-         #region 一个含三个参数的构造函数，为了配合DAL.Station中的SelectStationArray和SelectStationLineArray
-        /*存在的问题：
-         * 感觉不太好。。
+        /*原有的代码
          * */
-        public Station(string theStationID, string theStationName, bool theIsOnline)
-        {
-            Station stationInstance = new Station();
-            stationInstance.StationID = theStationID;
-            stationInstance.StationName = theStationName;
-            stationInstance.IsOnline = theIsOnline;
-        }
-        #endregion
+        
+
+        // #region 一个含三个参数的构造函数，为了配合DAL.Station中的SelectStationArray和SelectStationLineArray
+        ///*存在的问题：
+        // * 感觉不太好。。
+        // * */
+        //public Station(string theStationID, string theStationName, bool theIsOnline)
+        //{
+        //    Station stationInstance = new Station();
+        //    stationInstance.StationID = theStationID;
+        //    stationInstance.StationName = theStationName;
+        //    stationInstance.IsOnline = theIsOnline;
+        //}
+        //#endregion
+
     }
 }
+    

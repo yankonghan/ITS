@@ -6,20 +6,56 @@ using GMap.NET;
 
 namespace ITS_Manage.Model
 {
-    public partial class LineStationInfo
-    {
-        private string lineID;
-        public string LineID
-        {
-            get
-            {
-                return this.lineID;
-            }
-            set
-            {
-                this.lineID = value;
-            }
-        }
+
+     /// <summary>
+	/// lineStation:实体类(属性说明自动提取数据库字段的描述信息)
+	/// </summary>
+	[Serializable]
+	public class LineStation
+	{
+		public LineStation()
+		{}
+		#region Model
+		private string _stationid;
+		private string _lineid;
+		private string _prestationid;
+		private string _nextstationid;
+		/// <summary>
+		/// 
+		/// </summary>
+		public string stationID
+		{
+			set{ _stationid=value;}
+			get{return _stationid;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string lineID
+		{
+			set{ _lineid=value;}
+			get{return _lineid;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string preStationID
+		{
+			set{ _prestationid=value;}
+			get{return _prestationid;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string nextStationID
+		{
+			set{ _nextstationid=value;}
+			get{return _nextstationid;}
+		}
+		#endregion Model
+
+
+        #region  附加的字段，并不存在于数据库中
         private string[] upStationName;
         public string[] UpStationName
         {
@@ -92,19 +128,17 @@ namespace ITS_Manage.Model
                 this.stationLatLngDown = value;
             }
         }
+        #endregion
 
-        public LineStationInfo()
-        {
+        //原有的代码
 
-        }
-        //距离用double吧
-        public LineStationInfo(string[] theUpStationName, string[] theDownStationName, int[] theUpDistance, int[] theDownDistance, string theLineID)
-        {
-            this.UpDistance = theUpDistance;
-            this.DownDistance = theDownDistance;
-            this.LineID = theLineID;
-            this.UpStationName = theUpStationName;
-            this.DownStationName = theDownStationName;
-        }
+        //public LineStation(string[] theUpStationName, string[] theDownStationName, int[] theUpDistance, int[] theDownDistance, string theLineID)
+        //{
+        //    this.UpDistance = theUpDistance;
+        //    this.DownDistance = theDownDistance;
+        //    this.LineID = theLineID;
+        //    this.UpStationName = theUpStationName;
+        //    this.DownStationName = theDownStationName;
+        //}
     }
 }

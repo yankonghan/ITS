@@ -50,20 +50,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bus.cs" />
-    <Compile Include="BusRealInfo.cs" />
-    <Compile Include="LineStationInfo.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="RunInfo.cs" />
+    <Compile Include="BusTime.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="LineStation.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Station.cs" />
+    <Compile Include="Statistics.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ITS_Manager.COMMON\ITS_Manage.COMMON.csproj">
       <Project>{c48cf57a-c20c-4eef-9cb0-3a4cd51fe640}</Project>
       <Name>ITS_Manage.COMMON</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

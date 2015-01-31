@@ -82,15 +82,6 @@
     <Reference Include="GoogleMap">
       <HintPath>bin\Debug\GoogleMap.dll</HintPath>
     </Reference>
-    <Reference Include="ITS_Manage.DAL">
-      <HintPath>..\ITS_Manage.DAL\bin\Release\ITS_Manage.DAL.dll</HintPath>
-    </Reference>
-    <Reference Include="ITS_Manage.Model">
-      <HintPath>..\ITS_Manage.Model\bin\Release\ITS_Manage.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="ITS_Manager.COMMON">
-      <HintPath>..\ITS_Manager.COMMON\bin\Release\ITS_Manager.COMMON.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -123,7 +114,6 @@
     <Compile Include="ManageMainForm.Designer.cs">
       <DependentUpon>ManageMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl\EnumType.cs" />
@@ -244,6 +234,24 @@
     <Content Include="image\Ribbon_Underline_16x16.png" />
     <Content Include="image\Tasks_16x16.png" />
     <Content Include="image\Trash_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITS_Manage.BLL\ITS_Manage.BLL.csproj">
+      <Project>{91853723-3c69-4223-ae4f-39682b8429f9}</Project>
+      <Name>ITS_Manage.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITS_Manage.DAL\ITS_Manage.DAL.csproj">
+      <Project>{feb6d338-cc22-4d96-bb53-6e2da9dbaad8}</Project>
+      <Name>ITS_Manage.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITS_Manage.Model\ITS_Manage.Model.csproj">
+      <Project>{16b14489-abb6-4dbe-9a95-eff4405da489}</Project>
+      <Name>ITS_Manage.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITS_Manager.COMMON\ITS_Manage.COMMON.csproj">
+      <Project>{c48cf57a-c20c-4eef-9cb0-3a4cd51fe640}</Project>
+      <Name>ITS_Manage.COMMON</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

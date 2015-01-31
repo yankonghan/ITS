@@ -118,7 +118,7 @@ namespace ITS_Manage.DAL.DBUtility
         //}
         //定义连接字符串。
 
-        protected static string ConnectionString = "server = (local); database = ceshi; uid = sa; pwd = *******";
+        protected static string ConnectionString = "server = (local); database = ITS; uid = sa; pwd = kuiba008.";
        // protected static string ConnectionString = ConfigurationManager.AppSettings["ConnectionString"];
         protected static SqlConnection Connection;
         
