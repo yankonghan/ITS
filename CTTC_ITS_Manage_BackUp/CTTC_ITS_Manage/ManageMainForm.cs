@@ -559,10 +559,7 @@ namespace CTTC_ITS_Manage
                 #endregion
                
                 #region 加载站点列表
-                /*此处需要较大修改，主要是数据库中的Station并没有isOnline。。因此将暂时默认为站点全为isOnline
-                 * 站点需要什么isOnline吗？不是通过卫星定位的嘛。。额，暂时不清楚，如果要Station里添加isOnline，需要改DAL，Model，BLL
-                 * 等多处的方法，真麻烦！！！！！！！！！！！！！！！！
-                 * */
+           
 
                 for (int j = 0; j < Lineroot.Length; j++)
                 {
@@ -578,24 +575,24 @@ namespace CTTC_ITS_Manage
 
                         StationNodes[i] = new TreeNode(StationArrayForTree[i].stationName);
 
-                        //if (StationArrayForTree[i].isOnline == true)
-                        //{
+                        if (StationArrayForTree[i].isOnline == true)
+                        {
                             StationNodes[i].Text = StationArrayForTree[i].stationName.Trim() + "[在线]";
-                        //}
-                        //else
-                        //{
-                        //    StationNodes[i].Text = StationArrayForTree[i].stationName;
-                        //}
+                        }
+                        else
+                        {
+                            StationNodes[i].Text = StationArrayForTree[i].stationName;
+                        }
                         this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes.Add(StationNodes[i].Text, StationNodes[i].Text);
-                        //if (StationArrayForTree[i].isOnline == true)
-                        //{
+                        if (StationArrayForTree[i].isOnline == true)
+                        {
                             this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].ForeColor = Color.Green;
                             this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|在线";
-                        //}
-                        //else
-                        //{
-                        //    this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|离线";
-                        //}
+                        }
+                        else
+                        {
+                            this.ManageOnlineTree.Nodes[1].Nodes[j].Nodes[i].Tag = "在线监控|站点|离线";
+                        }
                     }
                 }
 
@@ -673,6 +670,16 @@ namespace CTTC_ITS_Manage
         }
 
         private void xtraTabControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainerControl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem26_ItemClick(object sender, ItemClickEventArgs e)
         {
 
         }

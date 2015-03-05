@@ -1,3 +1,3 @@
 # ITS
 ITS
-测试一下~~
+The project is mainly aimed at providing a solution for the intelligence bus management.

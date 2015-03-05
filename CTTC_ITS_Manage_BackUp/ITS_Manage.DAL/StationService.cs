@@ -14,9 +14,9 @@ using System.Threading.Tasks;
 namespace ITS_Manage.DAL
 {
     /// <summary>
-    /// 数据访问类:stationService
+    /// 数据访问类:StationService
     /// </summary>
-    public  class StationService
+    public partial class StationService
     {
         public StationService()
         { }
@@ -45,18 +45,20 @@ namespace ITS_Manage.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into station(");
-            strSql.Append("stationID,stationName,lat,lng)");
+            strSql.Append("stationID,stationName,lat,lng,isOnline)");
             strSql.Append(" values (");
-            strSql.Append("@stationID,@stationName,@lat,@lng)");
+            strSql.Append("@stationID,@stationName,@lat,@lng,@isOnline)");
             SqlParameter[] parameters = {
 					new SqlParameter("@stationID", SqlDbType.NVarChar,20),
 					new SqlParameter("@stationName", SqlDbType.NVarChar,20),
 					new SqlParameter("@lat", SqlDbType.Decimal,9),
-					new SqlParameter("@lng", SqlDbType.Decimal,9)};
+					new SqlParameter("@lng", SqlDbType.Decimal,9),
+					new SqlParameter("@isOnline", SqlDbType.Bit,1)};
             parameters[0].Value = model.stationID;
             parameters[1].Value = model.stationName;
             parameters[2].Value = model.lat;
             parameters[3].Value = model.lng;
+            parameters[4].Value = model.isOnline;
 
             int rows = SQLHelper.ExecuteSql(strSql.ToString(), parameters);
             if (rows > 0)
@@ -77,17 +79,20 @@ namespace ITS_Manage.DAL
             strSql.Append("update station set ");
             strSql.Append("stationName=@stationName,");
             strSql.Append("lat=@lat,");
-            strSql.Append("lng=@lng");
+            strSql.Append("lng=@lng,");
+            strSql.Append("isOnline=@isOnline");
             strSql.Append(" where stationID=@stationID ");
             SqlParameter[] parameters = {
 					new SqlParameter("@stationName", SqlDbType.NVarChar,20),
 					new SqlParameter("@lat", SqlDbType.Decimal,9),
 					new SqlParameter("@lng", SqlDbType.Decimal,9),
+					new SqlParameter("@isOnline", SqlDbType.Bit,1),
 					new SqlParameter("@stationID", SqlDbType.NVarChar,20)};
             parameters[0].Value = model.stationName;
             parameters[1].Value = model.lat;
             parameters[2].Value = model.lng;
-            parameters[3].Value = model.stationID;
+            parameters[3].Value = model.isOnline;
+            parameters[4].Value = model.stationID;
 
             int rows = SQLHelper.ExecuteSql(strSql.ToString(), parameters);
             if (rows > 0)
@@ -150,13 +155,13 @@ namespace ITS_Manage.DAL
         {
 
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select  top 1 stationID,stationName,lat,lng from station ");
+            strSql.Append("select  top 1 stationID,stationName,lat,lng,isOnline from station ");
             strSql.Append(" where stationID=@stationID ");
             SqlParameter[] parameters = {
 					new SqlParameter("@stationID", SqlDbType.NVarChar,20)			};
             parameters[0].Value = stationID;
 
-           ITS_Manage.Model.Station model = new ITS_Manage.Model.Station();
+            ITS_Manage.Model.Station model = new ITS_Manage.Model.Station();
             DataSet ds = SQLHelper.Query(strSql.ToString(), parameters);
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -193,6 +198,17 @@ namespace ITS_Manage.DAL
                 {
                     model.lng = decimal.Parse(row["lng"].ToString());
                 }
+                if (row["isOnline"] != null && row["isOnline"].ToString() != "")
+                {
+                    if ((row["isOnline"].ToString() == "1") || (row["isOnline"].ToString().ToLower() == "true"))
+                    {
+                        model.isOnline = true;
+                    }
+                    else
+                    {
+                        model.isOnline = false;
+                    }
+                }
             }
             return model;
         }
@@ -203,7 +219,7 @@ namespace ITS_Manage.DAL
         public DataSet GetList(string strWhere)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select stationID,stationName,lat,lng ");
+            strSql.Append("select stationID,stationName,lat,lng,isOnline ");
             strSql.Append(" FROM station ");
             if (strWhere.Trim() != "")
             {
@@ -223,7 +239,7 @@ namespace ITS_Manage.DAL
             {
                 strSql.Append(" top " + Top.ToString());
             }
-            strSql.Append(" stationID,stationName,lat,lng ");
+            strSql.Append(" stationID,stationName,lat,lng,isOnline ");
             strSql.Append(" FROM station ");
             if (strWhere.Trim() != "")
             {

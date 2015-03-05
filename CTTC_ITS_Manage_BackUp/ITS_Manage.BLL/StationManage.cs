@@ -6,12 +6,12 @@ using ITS_Manage.Model;
 namespace ITS_Manage.BLL
 {
     /// <summary>
-    /// stationManager
+    /// StationManager
     /// </summary>
-    public partial class StationManager
+    public partial class StationManage
     {
         private readonly ITS_Manage.DAL.StationService dal = new ITS_Manage.DAL.StationService();
-        public StationManager()
+        public StationManage()
         { }
         #region  BasicMethod
         /// <summary>
@@ -69,7 +69,7 @@ namespace ITS_Manage.BLL
         public ITS_Manage.Model.Station GetModelByCache(string stationID)
         {
 
-            string CacheKey = "StationModel-" + stationID;
+            string CacheKey = "stationModel-" + stationID;
             object objModel = Maticsoft.Common.DataCache.GetCache(CacheKey);
             if (objModel == null)
             {
