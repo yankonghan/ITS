@@ -7,46 +7,55 @@ namespace ITS_Manage.Model
     [Serializable]
     public class Station
     {
-        public Station()
-        { }
-        #region Model
-        private string _stationid;
-        private string _stationname;
-        private decimal? _lat;
-        private decimal? _lng;
-        /// <summary>
-        /// 
-        /// </summary>
-        public string stationID
-        {
-            set { _stationid = value; }
-            get { return _stationid; }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        public string stationName
-        {
-            set { _stationname = value; }
-            get { return _stationname; }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        public decimal? lat
-        {
-            set { _lat = value; }
-            get { return _lat; }
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        public decimal? lng
-        {
-            set { _lng = value; }
-            get { return _lng; }
-        }
-        #endregion Model
+       public Station()
+		{}
+		#region Model
+		private string _stationid;
+		private string _stationname;
+		private decimal? _lat;
+		private decimal? _lng;
+		private bool _isonline;
+		/// <summary>
+		/// 
+		/// </summary>
+		public string stationID
+		{
+			set{ _stationid=value;}
+			get{return _stationid;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public string stationName
+		{
+			set{ _stationname=value;}
+			get{return _stationname;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public decimal? lat
+		{
+			set{ _lat=value;}
+			get{return _lat;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public decimal? lng
+		{
+			set{ _lng=value;}
+			get{return _lng;}
+		}
+		/// <summary>
+		/// 
+		/// </summary>
+		public bool isOnline
+		{
+			set{ _isonline=value;}
+			get{return _isonline;}
+		}
+		#endregion Model
 
         /*原有的代码
          * */

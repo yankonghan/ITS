@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,772 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="图标2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="集装箱港口2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\集装箱港口2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="麦当劳" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\麦当劳.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帐篷1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\帐篷1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amphitheater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amphitheater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="纪念碑" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\纪念碑.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车库1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车库1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agriculture4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agriculture4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="游泳场所" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\游泳场所.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水池" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水池.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vehicle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vehicle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="剧院" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\剧院.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小船停泊港" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小船停泊港.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="火车站2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\火车站2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="博物馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\博物馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="建筑1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\建筑1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图书馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图书馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="F" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="教堂1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\教堂1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="花园" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\花园.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="百货商店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\百货商店.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市建筑物2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市建筑物2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挡车器2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挡车器2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="progressbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progressbar.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="食品商店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\食品商店.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="码头" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\码头.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="娱乐场所" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\娱乐场所.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="003c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003c.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="快餐店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\快餐店.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="门" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\门.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airport-terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airport-terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="营帐" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\营帐.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airport-runway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airport-runway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城堡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城堡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="家" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\家.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="教堂2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\教堂2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="天主教寺庙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\天主教寺庙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帐篷2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\帐篷2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="汽车租赁公司" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\汽车租赁公司.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海滩" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海滩.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="滑雪场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\滑雪场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车库2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车库2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="08h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\08h.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airport-apron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airport-apron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="学校1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\学校1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="体育场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\体育场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agriculture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agriculture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="01a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01a.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="停车场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\停车场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="购物中心2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\购物中心2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="动物园2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\动物园2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="港口" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\港口.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="村庄" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\村庄.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="展览馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\展览馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="accident1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accident1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="制药厂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\制药厂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒店2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒店2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="房子2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\房子2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公墓" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公墓.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挡车器1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挡车器1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="建筑2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\建筑2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水厂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水厂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="悬崖" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\悬崖.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="纪念馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\纪念馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公园" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公园.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工厂2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工厂2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="渔场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\渔场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="桥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\桥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公交车站1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公交车站1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ancienttempleruin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ancienttempleruin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agriculture3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agriculture3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="电影院" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\电影院.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="消防队" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\消防队.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加油站1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\加油站1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ancienttemple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ancienttemple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="饭店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\饭店.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="仓库" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\仓库.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aircraft-small1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aircraft-small1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="机场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\机场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="旅馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\旅馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="009i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\009i.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="运动馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\运动馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="购物中心1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\购物中心1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="汽车维修站" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\汽车维修站.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="distance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\distance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="邮局" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\邮局.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="房子1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\房子1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="学校2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\学校2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="accident" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accident.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="船坡" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\船坡.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="火车站1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\火车站1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agriculture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agriculture2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airplane-sport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airplane-sport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="银行" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\银行.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="礼品店" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\礼品店.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ancientmonument" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ancientmonument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市建筑物1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市建筑物1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aestheticscenter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aestheticscenter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="station" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\station.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="军事重地" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\军事重地.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="游乐场" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\游乐场.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工厂1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工厂1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="医院" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\医院.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="警察局" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\警察局.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="政府" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\政府.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="咖啡馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\咖啡馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="动物园1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\动物园1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图标9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图标9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airplane-tourism" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\airplane-tourism.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aircraft-small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aircraft-small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="child" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\child.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="002b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002b.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mm_20_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mm_20_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NeedleLeftYellow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NeedleLeftYellow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="集装箱港口1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\集装箱港口1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="化工厂" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\化工厂.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水车" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水车.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海关" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海关.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="洞穴" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\洞穴.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="领事馆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\领事馆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猎捕场所" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猎捕场所.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10j" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10j.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="011k" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\011k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加油站2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\加油站2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="森林" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\森林.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="骑自行车" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\骑自行车.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒吧" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒吧.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公交车站2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公交车站2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="隧道" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\隧道.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administration1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administration1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="办公楼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\办公楼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="012l" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\012l.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amphitheater-tourism" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\amphitheater-tourism.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="百货商店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\百货商店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="办公楼1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\办公楼1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="博物馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\博物馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="仓库1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\仓库1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车库11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车库11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="车库21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\车库21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城堡1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城堡1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市建筑物11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市建筑物11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="城市建筑物21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\城市建筑物21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="船坡1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\船坡1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="村庄1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\村庄1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挡车器11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挡车器11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="挡车器21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\挡车器21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="电影院1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\电影院1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="动物园11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\动物园11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="动物园21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\动物园21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="洞穴1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\洞穴1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="饭店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\饭店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="房子11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\房子11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="房子21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\房子21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="港口1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\港口1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工厂11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工厂11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工厂21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工厂21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公交车站11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公交车站11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公交车站21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公交车站21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公墓1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公墓1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="公园1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\公园1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="购物中心11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\购物中心11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="购物中心21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\购物中心21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海关1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海关1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="海滩1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\海滩1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="花园1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\花园1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="滑雪场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\滑雪场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="化工厂1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\化工厂1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="火车站11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\火车站11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="火车站21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\火车站21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="机场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\机场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="集装箱港口11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\集装箱港口11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="集装箱港口21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\集装箱港口21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="纪念碑1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\纪念碑1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="纪念馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\纪念馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加油站11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\加油站11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="加油站21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\加油站21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="家1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\家1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="建筑11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\建筑11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="建筑21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\建筑21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="教堂11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\教堂11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="教堂21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\教堂21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="警察局1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\警察局1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒吧1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒吧1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒店11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒店11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="酒店21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\酒店21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="剧院1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\剧院1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="军事重地1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\军事重地1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="咖啡馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\咖啡馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="快餐店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\快餐店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="礼品店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\礼品店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="猎捕场所1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\猎捕场所1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="领事馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\领事馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="旅馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\旅馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="码头1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\码头1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="麦当劳1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\麦当劳1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="门1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\门1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="骑自行车1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\骑自行车1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="汽车维修站1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\汽车维修站1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="汽车租赁公司1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\汽车租赁公司1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="桥1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\桥1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="森林1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\森林1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="食品商店1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\食品商店1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水厂1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水厂1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水车1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水车1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="水池1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\水池1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="隧道1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\隧道1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="体育场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\体育场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="天主教寺庙1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\天主教寺庙1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="停车场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\停车场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="图书馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\图书馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="消防队1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\消防队1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小船停泊港1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小船停泊港1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="悬崖1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\悬崖1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="学校11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\学校11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="学校21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\学校21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="医院1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\医院1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="银行1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\银行1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="营帐1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\营帐1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="邮局1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\邮局1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="游乐场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\游乐场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="游泳场所1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\游泳场所1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="娱乐场所1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\娱乐场所1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="渔场1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\渔场1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="运动馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\运动馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="展览馆1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\展览馆1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帐篷11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\帐篷11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帐篷21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\帐篷21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="政府1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\政府1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="制药厂1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\制药厂1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

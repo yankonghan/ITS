@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTTC_ITS_Manage", "CTTC_ITS_Manage\CTTC_ITS_Manage.csproj", "{9B5708E8-A4B7-44E2-AC7B-8AA417D126EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS_Manage.DAL", "ITS_Manage.DAL\ITS_Manage.DAL.csproj", "{FEB6D338-CC22-4D96-BB53-6E2DA9DBAAD8}"

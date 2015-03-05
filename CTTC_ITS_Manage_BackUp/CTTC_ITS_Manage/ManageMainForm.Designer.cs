@@ -31,6 +31,11 @@ namespace CTTC_ITS_Manage
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageMainForm));
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipSeparatorItem toolTipSeparatorItem1 = new DevExpress.Utils.ToolTipSeparatorItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("车辆监控");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("站点监控");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("部门列表");
@@ -74,6 +79,67 @@ namespace CTTC_ITS_Manage
             this.iLeftTextAlign = new DevExpress.XtraBars.BarButtonItem();
             this.iCenterTextAlign = new DevExpress.XtraBars.BarButtonItem();
             this.iRightTextAlign = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem42 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem44 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem45 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem46 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem49 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem50 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem51 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem47 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem52 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem53 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem54 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem55 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem56 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem57 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem58 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem59 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem60 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ManageOnLineToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.fileRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -81,41 +147,29 @@ namespace CTTC_ITS_Manage
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ReportToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.HistoryRecordToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.formatRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ReportToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup24 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.HelpToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup32 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup33 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.BasicInfoToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup26 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup27 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup28 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup29 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup30 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.HelpToolRibbon = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup32 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup33 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup34 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup35 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup38 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup39 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.skinsRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
@@ -153,6 +207,7 @@ namespace CTTC_ITS_Manage
             this.popupControlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
             this.navBarControl.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
@@ -189,8 +244,10 @@ namespace CTTC_ITS_Manage
             // 
             this.ribbonControl.ApplicationButtonDropDownControl = this.appMenu;
             this.ribbonControl.ApplicationButtonText = null;
+            this.ribbonControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.ExpandCollapseItem.Name = "";
+            this.ribbonControl.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ribbonControl.Images = this.ribbonImageCollection;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
@@ -199,19 +256,83 @@ namespace CTTC_ITS_Manage
             this.iUnderlinedFontStyle,
             this.iLeftTextAlign,
             this.iCenterTextAlign,
-            this.iRightTextAlign});
+            this.iRightTextAlign,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6,
+            this.barButtonItem7,
+            this.barButtonItem8,
+            this.barButtonItem9,
+            this.barButtonItem10,
+            this.barButtonItem11,
+            this.barButtonItem12,
+            this.barButtonItem13,
+            this.barButtonItem14,
+            this.barButtonItem15,
+            this.barButtonItem16,
+            this.barButtonItem17,
+            this.barButtonItem18,
+            this.barButtonItem20,
+            this.barButtonItem22,
+            this.barButtonItem23,
+            this.barButtonItem24,
+            this.barSubItem1,
+            this.barButtonItem26,
+            this.barButtonItem27,
+            this.barButtonItem19,
+            this.barButtonItem21,
+            this.barButtonItem25,
+            this.barButtonItem28,
+            this.barButtonItem29,
+            this.barButtonItem30,
+            this.barButtonItem31,
+            this.barButtonItem32,
+            this.barButtonItem33,
+            this.barButtonItem34,
+            this.barButtonItem35,
+            this.barButtonItem36,
+            this.barButtonItem37,
+            this.barButtonItem38,
+            this.barButtonItem39,
+            this.barButtonItem40,
+            this.barButtonItem41,
+            this.barButtonItem42,
+            this.barButtonItem43,
+            this.barButtonItem44,
+            this.barButtonItem45,
+            this.barButtonItem46,
+            this.barButtonItem48,
+            this.barButtonItem49,
+            this.barButtonItem50,
+            this.barButtonItem51,
+            this.barButtonItem47,
+            this.barButtonItem52,
+            this.barButtonItem53,
+            this.barButtonItem54,
+            this.barButtonItem55,
+            this.barButtonItem56,
+            this.barButtonItem57,
+            this.barButtonItem58,
+            this.barButtonItem59,
+            this.barButtonItem60});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 63;
+            this.ribbonControl.MaxItemId = 141;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ManageOnLineToolRibbon,
-            this.HistoryRecordToolRibbon,
             this.ReportToolRibbon,
+            this.HistoryRecordToolRibbon,
+            this.HelpToolRibbon,
             this.BasicInfoToolRibbon,
-            this.HelpToolRibbon});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbonControl.Size = new System.Drawing.Size(1100, 133);
+            this.ribbonPage1,
+            this.ribbonPage2});
+            this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1});
+            this.ribbonControl.Size = new System.Drawing.Size(1100, 147);
             this.ribbonControl.Click += new System.EventHandler(this.ribbonControl_Click);
             // 
             // appMenu
@@ -337,6 +458,494 @@ namespace CTTC_ITS_Manage
             this.iRightTextAlign.ImageIndex = 14;
             this.iRightTextAlign.Name = "iRightTextAlign";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "barButtonItem1";
+            this.barButtonItem1.Id = 65;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "实时监控";
+            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
+            this.barButtonItem2.Id = 69;
+            this.barButtonItem2.ImageIndex = 1;
+            this.barButtonItem2.ItemAppearance.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.barButtonItem2.ItemAppearance.Normal.Options.UseBackColor = true;
+            this.barButtonItem2.ItemAppearance.Normal.Options.UseImage = true;
+            this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "停止监控";
+            this.barButtonItem3.Id = 70;
+            this.barButtonItem3.ImageIndex = 3;
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "超速报警";
+            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
+            this.barButtonItem4.Id = 76;
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "barButtonItem5";
+            this.barButtonItem5.Id = 78;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "barButtonItem6";
+            this.barButtonItem6.Id = 79;
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "视屏监控";
+            this.barButtonItem7.Glyph = global::CTTC_ITS_Manage.Properties.Resources.aircraft_small;
+            this.barButtonItem7.Id = 80;
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "语音通话";
+            this.barButtonItem8.Glyph = global::CTTC_ITS_Manage.Properties.Resources.administration;
+            this.barButtonItem8.Id = 81;
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "离线报警";
+            this.barButtonItem9.Glyph = global::CTTC_ITS_Manage.Properties.Resources.帐篷2;
+            this.barButtonItem9.Id = 82;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "偏离报警";
+            this.barButtonItem10.Glyph = global::CTTC_ITS_Manage.Properties.Resources._012l;
+            this.barButtonItem10.Id = 84;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "手动解除";
+            this.barButtonItem11.Glyph = global::CTTC_ITS_Manage.Properties.Resources._009i;
+            this.barButtonItem11.Id = 85;
+            this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "车辆信息列表";
+            this.barButtonItem12.Glyph = global::CTTC_ITS_Manage.Properties.Resources.progressbar;
+            this.barButtonItem12.Id = 86;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.Caption = "定位功能";
+            this.barButtonItem13.Glyph = global::CTTC_ITS_Manage.Properties.Resources.mm_20_yellow;
+            this.barButtonItem13.Id = 87;
+            this.barButtonItem13.Name = "barButtonItem13";
+            this.barButtonItem13.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.Caption = "待发车列表";
+            this.barButtonItem14.Glyph = global::CTTC_ITS_Manage.Properties.Resources.F;
+            this.barButtonItem14.Id = 88;
+            this.barButtonItem14.Name = "barButtonItem14";
+            this.barButtonItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem15
+            // 
+            this.barButtonItem15.Caption = "增补发车";
+            this.barButtonItem15.Glyph = global::CTTC_ITS_Manage.Properties.Resources.ancienttemple;
+            this.barButtonItem15.Id = 89;
+            this.barButtonItem15.Name = "barButtonItem15";
+            this.barButtonItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem16
+            // 
+            this.barButtonItem16.Caption = "查看帮助文档";
+            this.barButtonItem16.Glyph = global::CTTC_ITS_Manage.Properties.Resources._003c;
+            this.barButtonItem16.Id = 90;
+            this.barButtonItem16.Name = "barButtonItem16";
+            this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem17
+            // 
+            this.barButtonItem17.Caption = "barButtonItem17";
+            this.barButtonItem17.Id = 91;
+            this.barButtonItem17.Name = "barButtonItem17";
+            // 
+            // barButtonItem18
+            // 
+            this.barButtonItem18.Caption = "发车正点统计表";
+            this.barButtonItem18.Glyph = global::CTTC_ITS_Manage.Properties.Resources.运动馆;
+            this.barButtonItem18.Id = 92;
+            this.barButtonItem18.ItemAppearance.Normal.Options.UseTextOptions = true;
+            this.barButtonItem18.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.barButtonItem18.Name = "barButtonItem18";
+            this.barButtonItem18.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // barButtonItem20
+            // 
+            this.barButtonItem20.Caption = "车辆公里数统计表";
+            this.barButtonItem20.Glyph = global::CTTC_ITS_Manage.Properties.Resources.麦当劳1;
+            this.barButtonItem20.Id = 94;
+            this.barButtonItem20.Name = "barButtonItem20";
+            this.barButtonItem20.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem22
+            // 
+            this.barButtonItem22.Caption = "司机台账";
+            this.barButtonItem22.Glyph = global::CTTC_ITS_Manage.Properties.Resources.森林;
+            this.barButtonItem22.Id = 96;
+            this.barButtonItem22.Name = "barButtonItem22";
+            this.barButtonItem22.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem23
+            // 
+            this.barButtonItem23.Caption = "耗油量统计";
+            this.barButtonItem23.Glyph = global::CTTC_ITS_Manage.Properties.Resources.骑自行车1;
+            this.barButtonItem23.Id = 97;
+            this.barButtonItem23.Name = "barButtonItem23";
+            this.barButtonItem23.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem24
+            // 
+            this.barButtonItem24.Caption = "车辆台账";
+            this.barButtonItem24.Glyph = global::CTTC_ITS_Manage.Properties.Resources.门1;
+            this.barButtonItem24.Id = 98;
+            this.barButtonItem24.Name = "barButtonItem24";
+            this.barButtonItem24.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "车辆运营统计表";
+            this.barSubItem1.Glyph = global::CTTC_ITS_Manage.Properties.Resources.桥;
+            this.barSubItem1.Id = 100;
+            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem26),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem27)});
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barButtonItem26
+            // 
+            this.barButtonItem26.Caption = "车辆运营收入统计表";
+            this.barButtonItem26.Glyph = global::CTTC_ITS_Manage.Properties.Resources.汽车租赁公司;
+            this.barButtonItem26.Id = 102;
+            this.barButtonItem26.Name = "barButtonItem26";
+            this.barButtonItem26.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem26_ItemClick);
+            // 
+            // barButtonItem27
+            // 
+            this.barButtonItem27.Caption = "车辆运营状态统计表";
+            this.barButtonItem27.Glyph = global::CTTC_ITS_Manage.Properties.Resources.汽车维修站;
+            this.barButtonItem27.Id = 103;
+            this.barButtonItem27.Name = "barButtonItem27";
+            // 
+            // barButtonItem19
+            // 
+            this.barButtonItem19.Caption = "超速统计表";
+            this.barButtonItem19.Glyph = global::CTTC_ITS_Manage.Properties.Resources.码头;
+            this.barButtonItem19.Id = 104;
+            this.barButtonItem19.Name = "barButtonItem19";
+            this.barButtonItem19.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem21
+            // 
+            this.barButtonItem21.Caption = "离线统计表";
+            this.barButtonItem21.Glyph = global::CTTC_ITS_Manage.Properties.Resources.领事馆;
+            this.barButtonItem21.Id = 105;
+            this.barButtonItem21.Name = "barButtonItem21";
+            this.barButtonItem21.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem25
+            // 
+            this.barButtonItem25.Caption = "偏离统计表";
+            this.barButtonItem25.Glyph = global::CTTC_ITS_Manage.Properties.Resources.猎捕场所;
+            this.barButtonItem25.Id = 106;
+            this.barButtonItem25.Name = "barButtonItem25";
+            this.barButtonItem25.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem28
+            // 
+            this.barButtonItem28.Caption = "事故统计";
+            this.barButtonItem28.Glyph = global::CTTC_ITS_Manage.Properties.Resources.礼品店;
+            this.barButtonItem28.Id = 107;
+            this.barButtonItem28.Name = "barButtonItem28";
+            this.barButtonItem28.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem29
+            // 
+            this.barButtonItem29.Caption = "按时间查询";
+            this.barButtonItem29.Glyph = global::CTTC_ITS_Manage.Properties.Resources.电影院;
+            this.barButtonItem29.Id = 108;
+            this.barButtonItem29.Name = "barButtonItem29";
+            this.barButtonItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem30
+            // 
+            this.barButtonItem30.Caption = "按线路查询";
+            this.barButtonItem30.Glyph = global::CTTC_ITS_Manage.Properties.Resources.挡车器21;
+            this.barButtonItem30.Id = 109;
+            this.barButtonItem30.Name = "barButtonItem30";
+            this.barButtonItem30.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem31
+            // 
+            this.barButtonItem31.Caption = "按驾驶员查询";
+            this.barButtonItem31.Glyph = global::CTTC_ITS_Manage.Properties.Resources.滑雪场;
+            this.barButtonItem31.Id = 110;
+            this.barButtonItem31.Name = "barButtonItem31";
+            this.barButtonItem31.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem32
+            // 
+            this.barButtonItem32.Caption = "按车牌号查询";
+            this.barButtonItem32.Glyph = global::CTTC_ITS_Manage.Properties.Resources.花园;
+            this.barButtonItem32.Id = 111;
+            this.barButtonItem32.Name = "barButtonItem32";
+            this.barButtonItem32.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem33
+            // 
+            this.barButtonItem33.Caption = "查看帮助文档";
+            this.barButtonItem33.Glyph = global::CTTC_ITS_Manage.Properties.Resources.海滩;
+            this.barButtonItem33.Id = 112;
+            this.barButtonItem33.Name = "barButtonItem33";
+            this.barButtonItem33.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem34
+            // 
+            this.barButtonItem34.Caption = "车辆内部各传感器自检";
+            this.barButtonItem34.Glyph = global::CTTC_ITS_Manage.Properties.Resources.海关;
+            this.barButtonItem34.Id = 113;
+            this.barButtonItem34.Name = "barButtonItem34";
+            this.barButtonItem34.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem35
+            // 
+            this.barButtonItem35.Caption = "生成Excel";
+            this.barButtonItem35.Glyph = global::CTTC_ITS_Manage.Properties.Resources.购物中心1;
+            this.barButtonItem35.Id = 114;
+            this.barButtonItem35.Name = "barButtonItem35";
+            this.barButtonItem35.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem36
+            // 
+            this.barButtonItem36.Caption = "查看帮助文档";
+            this.barButtonItem36.Glyph = global::CTTC_ITS_Manage.Properties.Resources.公墓;
+            this.barButtonItem36.Id = 115;
+            this.barButtonItem36.Name = "barButtonItem36";
+            this.barButtonItem36.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem37
+            // 
+            this.barButtonItem37.Caption = "车辆信息修改";
+            this.barButtonItem37.Glyph = global::CTTC_ITS_Manage.Properties.Resources.公交车站11;
+            this.barButtonItem37.Id = 116;
+            this.barButtonItem37.Name = "barButtonItem37";
+            this.barButtonItem37.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem38
+            // 
+            this.barButtonItem38.Caption = "终端注册";
+            this.barButtonItem38.Glyph = global::CTTC_ITS_Manage.Properties.Resources.工厂2;
+            this.barButtonItem38.Id = 117;
+            this.barButtonItem38.Name = "barButtonItem38";
+            this.barButtonItem38.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem39
+            // 
+            this.barButtonItem39.Caption = "终端注销";
+            this.barButtonItem39.Glyph = global::CTTC_ITS_Manage.Properties.Resources.港口1;
+            this.barButtonItem39.Id = 118;
+            this.barButtonItem39.Name = "barButtonItem39";
+            this.barButtonItem39.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem40
+            // 
+            this.barButtonItem40.Caption = "修改线路信息";
+            this.barButtonItem40.Glyph = global::CTTC_ITS_Manage.Properties.Resources.房子21;
+            this.barButtonItem40.Id = 119;
+            this.barButtonItem40.Name = "barButtonItem40";
+            this.barButtonItem40.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem41
+            // 
+            this.barButtonItem41.Caption = "增加新线路";
+            this.barButtonItem41.Glyph = global::CTTC_ITS_Manage.Properties.Resources.房子1;
+            this.barButtonItem41.Id = 120;
+            this.barButtonItem41.Name = "barButtonItem41";
+            this.barButtonItem41.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem42
+            // 
+            this.barButtonItem42.Caption = "删除线路";
+            this.barButtonItem42.Glyph = global::CTTC_ITS_Manage.Properties.Resources.洞穴1;
+            this.barButtonItem42.Id = 121;
+            this.barButtonItem42.Name = "barButtonItem42";
+            this.barButtonItem42.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem43
+            // 
+            this.barButtonItem43.Caption = "管理员信息及权限修改";
+            this.barButtonItem43.Glyph = global::CTTC_ITS_Manage.Properties.Resources.动物园2;
+            this.barButtonItem43.Id = 122;
+            this.barButtonItem43.Name = "barButtonItem43";
+            this.barButtonItem43.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem44
+            // 
+            this.barButtonItem44.Caption = "添加管理员";
+            this.barButtonItem44.Glyph = global::CTTC_ITS_Manage.Properties.Resources.动物园1;
+            this.barButtonItem44.Id = 123;
+            this.barButtonItem44.Name = "barButtonItem44";
+            this.barButtonItem44.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem45
+            // 
+            this.barButtonItem45.Caption = "删除管理员";
+            this.barButtonItem45.Glyph = global::CTTC_ITS_Manage.Properties.Resources.电影院;
+            this.barButtonItem45.Id = 124;
+            this.barButtonItem45.Name = "barButtonItem45";
+            this.barButtonItem45.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem46
+            // 
+            this.barButtonItem46.Caption = "模拟运行图";
+            this.barButtonItem46.Glyph = global::CTTC_ITS_Manage.Properties.Resources.城市11;
+            this.barButtonItem46.Id = 125;
+            this.barButtonItem46.Name = "barButtonItem46";
+            this.barButtonItem46.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem48
+            // 
+            this.barButtonItem48.Caption = "进出站记录";
+            this.barButtonItem48.Glyph = global::CTTC_ITS_Manage.Properties.Resources.城市建筑物1;
+            this.barButtonItem48.Id = 127;
+            this.barButtonItem48.Name = "barButtonItem48";
+            this.barButtonItem48.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem49
+            // 
+            this.barButtonItem49.Caption = "车辆班次配置";
+            this.barButtonItem49.Glyph = global::CTTC_ITS_Manage.Properties.Resources.station;
+            this.barButtonItem49.Id = 128;
+            this.barButtonItem49.Name = "barButtonItem49";
+            this.barButtonItem49.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem50
+            // 
+            this.barButtonItem50.Caption = "调度计划生成";
+            this.barButtonItem50.Glyph = global::CTTC_ITS_Manage.Properties.Resources.船坡;
+            this.barButtonItem50.Id = 129;
+            this.barButtonItem50.Name = "barButtonItem50";
+            this.barButtonItem50.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem51
+            // 
+            this.barButtonItem51.Caption = "调度计划查询";
+            this.barButtonItem51.Glyph = global::CTTC_ITS_Manage.Properties.Resources.城市建筑物21;
+            this.barButtonItem51.Id = 130;
+            this.barButtonItem51.Name = "barButtonItem51";
+            this.barButtonItem51.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem47
+            // 
+            this.barButtonItem47.Caption = "定点投放";
+            this.barButtonItem47.Glyph = global::CTTC_ITS_Manage.Properties.Resources.博物馆1;
+            this.barButtonItem47.Id = 131;
+            this.barButtonItem47.Name = "barButtonItem47";
+            this.barButtonItem47.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem52
+            // 
+            this.barButtonItem52.Caption = "内容消息";
+            this.barButtonItem52.Glyph = global::CTTC_ITS_Manage.Properties.Resources.城堡1;
+            this.barButtonItem52.Id = 132;
+            this.barButtonItem52.Name = "barButtonItem52";
+            this.barButtonItem52.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem53
+            // 
+            this.barButtonItem53.Caption = "新增消息";
+            this.barButtonItem53.Glyph = global::CTTC_ITS_Manage.Properties.Resources.车库21;
+            this.barButtonItem53.Id = 133;
+            this.barButtonItem53.Name = "barButtonItem53";
+            this.barButtonItem53.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem54
+            // 
+            this.barButtonItem54.Caption = "删除消息";
+            this.barButtonItem54.Glyph = global::CTTC_ITS_Manage.Properties.Resources.仓库1;
+            this.barButtonItem54.Id = 134;
+            this.barButtonItem54.Name = "barButtonItem54";
+            this.barButtonItem54.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem55
+            // 
+            this.barButtonItem55.Caption = "注销登录";
+            this.barButtonItem55.Glyph = global::CTTC_ITS_Manage.Properties.Resources.办公楼;
+            this.barButtonItem55.Id = 135;
+            this.barButtonItem55.Name = "barButtonItem55";
+            this.barButtonItem55.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem56
+            // 
+            this.barButtonItem56.Caption = "图标设置";
+            this.barButtonItem56.Glyph = global::CTTC_ITS_Manage.Properties.Resources.vehicle;
+            this.barButtonItem56.Id = 136;
+            this.barButtonItem56.Name = "barButtonItem56";
+            this.barButtonItem56.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem57
+            // 
+            this.barButtonItem57.Caption = "颜色设置";
+            this.barButtonItem57.Glyph = global::CTTC_ITS_Manage.Properties.Resources.政府1;
+            this.barButtonItem57.Id = 137;
+            this.barButtonItem57.Name = "barButtonItem57";
+            this.barButtonItem57.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem58
+            // 
+            this.barButtonItem58.Caption = "比例尺设置";
+            this.barButtonItem58.Glyph = global::CTTC_ITS_Manage.Properties.Resources.展览馆1;
+            this.barButtonItem58.Id = 138;
+            this.barButtonItem58.Name = "barButtonItem58";
+            this.barButtonItem58.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem59
+            // 
+            this.barButtonItem59.Caption = "计算距离";
+            this.barButtonItem59.Glyph = global::CTTC_ITS_Manage.Properties.Resources.渔场1;
+            this.barButtonItem59.Id = 139;
+            this.barButtonItem59.Name = "barButtonItem59";
+            this.barButtonItem59.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // barButtonItem60
+            // 
+            this.barButtonItem60.Caption = "帮助";
+            this.barButtonItem60.Glyph = global::CTTC_ITS_Manage.Properties.Resources.游泳场所1;
+            this.barButtonItem60.Id = 140;
+            this.barButtonItem60.Name = "barButtonItem60";
+            this.barButtonItem60.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -358,73 +967,94 @@ namespace CTTC_ITS_Manage
             this.ribbonPageGroup9,
             this.ribbonPageGroup10,
             this.ribbonPageGroup11,
-            this.ribbonPageGroup12,
-            this.ribbonPageGroup13,
-            this.ribbonPageGroup14,
-            this.ribbonPageGroup15,
-            this.ribbonPageGroup16,
-            this.ribbonPageGroup17,
-            this.ribbonPageGroup18});
+            this.ribbonPageGroup12});
             this.ManageOnLineToolRibbon.Name = "ManageOnLineToolRibbon";
             this.ManageOnLineToolRibbon.Tag = ((short)(0));
             this.ManageOnLineToolRibbon.Text = "在线监控";
             // 
             // fileRibbonPageGroup
             // 
-            this.fileRibbonPageGroup.ImageIndex = 12;
+            this.fileRibbonPageGroup.ItemLinks.Add(this.barButtonItem2);
+            this.fileRibbonPageGroup.ItemLinks.Add(this.barButtonItem3);
+            this.fileRibbonPageGroup.ItemLinks.Add(this.barButtonItem7);
+            this.fileRibbonPageGroup.ItemLinks.Add(this.barButtonItem8);
+            this.fileRibbonPageGroup.KeyTip = "导航";
             this.fileRibbonPageGroup.Name = "fileRibbonPageGroup";
-            this.fileRibbonPageGroup.Text = "File";
+            this.fileRibbonPageGroup.ShowCaptionButton = false;
+            toolTipTitleItem1.Appearance.Image = global::CTTC_ITS_Manage.Properties.Resources.accident;
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Image = global::CTTC_ITS_Manage.Properties.Resources.accident;
+            toolTipTitleItem1.Text = "导航哦";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = "不错的图标";
+            toolTipTitleItem2.LeftIndent = 6;
+            toolTipTitleItem2.Text = "啊啊啊啊";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            superToolTip1.Items.Add(toolTipSeparatorItem1);
+            superToolTip1.Items.Add(toolTipTitleItem2);
+            this.fileRibbonPageGroup.SuperTip = superToolTip1;
+            this.fileRibbonPageGroup.Text = "线路监控";
             // 
             // ribbonPageGroup9
             // 
-            this.ribbonPageGroup9.ImageIndex = 7;
+            this.ribbonPageGroup9.Glyph = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup9.Glyph")));
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "File";
+            this.ribbonPageGroup9.ShowCaptionButton = false;
+            this.ribbonPageGroup9.Text = "报警监控";
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem13);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "File";
+            this.ribbonPageGroup10.ShowCaptionButton = false;
+            this.ribbonPageGroup10.Text = "功能区";
             // 
             // ribbonPageGroup11
             // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem15);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "File";
+            this.ribbonPageGroup11.ShowCaptionButton = false;
+            this.ribbonPageGroup11.Text = "调度中心";
             // 
             // ribbonPageGroup12
             // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem16);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "File";
+            this.ribbonPageGroup12.ShowCaptionButton = false;
+            this.ribbonPageGroup12.Text = "帮助文档";
             // 
-            // ribbonPageGroup13
+            // ReportToolRibbon
             // 
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "File";
+            this.ReportToolRibbon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup7,
+            this.ribbonPageGroup20});
+            this.ReportToolRibbon.Name = "ReportToolRibbon";
+            this.ReportToolRibbon.Tag = ((short)(3));
+            this.ReportToolRibbon.Text = "历史轨迹";
             // 
-            // ribbonPageGroup14
+            // ribbonPageGroup7
             // 
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "File";
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem30);
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem31);
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem32);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.ShowCaptionButton = false;
+            this.ribbonPageGroup7.Text = "查询";
             // 
-            // ribbonPageGroup15
+            // ribbonPageGroup20
             // 
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "File";
-            // 
-            // ribbonPageGroup16
-            // 
-            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            this.ribbonPageGroup16.Text = "File";
-            // 
-            // ribbonPageGroup17
-            // 
-            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
-            this.ribbonPageGroup17.Text = "File";
-            // 
-            // ribbonPageGroup18
-            // 
-            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            this.ribbonPageGroup18.Text = "File";
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem33);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            this.ribbonPageGroup20.ShowCaptionButton = false;
+            this.ribbonPageGroup20.Text = "帮助";
             // 
             // HistoryRecordToolRibbon
             // 
@@ -432,177 +1062,173 @@ namespace CTTC_ITS_Manage
             this.formatRibbonPageGroup,
             this.ribbonPageGroup6,
             this.ribbonPageGroup8,
-            this.ribbonPageGroup19});
+            this.ribbonPageGroup19,
+            this.ribbonPageGroup13});
             this.HistoryRecordToolRibbon.Name = "HistoryRecordToolRibbon";
             this.HistoryRecordToolRibbon.Tag = ((short)(2));
-            this.HistoryRecordToolRibbon.Text = "历史轨迹";
+            this.HistoryRecordToolRibbon.Text = "报表中心";
             // 
             // formatRibbonPageGroup
             // 
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barButtonItem18);
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barSubItem1);
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barButtonItem22);
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barButtonItem23);
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barButtonItem24);
+            this.formatRibbonPageGroup.ItemLinks.Add(this.barButtonItem20);
             this.formatRibbonPageGroup.Name = "formatRibbonPageGroup";
-            this.formatRibbonPageGroup.Text = "Format";
+            this.formatRibbonPageGroup.ShowCaptionButton = false;
+            this.formatRibbonPageGroup.Text = "运营分析";
             // 
             // ribbonPageGroup6
             // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem19);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem21);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem25);
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem28);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Format";
+            this.ribbonPageGroup6.ShowCaptionButton = false;
+            this.ribbonPageGroup6.Text = "报警统计";
             // 
             // ribbonPageGroup8
             // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem34);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "Format";
+            this.ribbonPageGroup8.ShowCaptionButton = false;
+            this.ribbonPageGroup8.Text = "车辆自检";
             // 
             // ribbonPageGroup19
             // 
-            this.ribbonPageGroup19.ImageIndex = 2;
+            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem35);
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
-            this.ribbonPageGroup19.Text = "Format";
+            this.ribbonPageGroup19.ShowCaptionButton = false;
+            this.ribbonPageGroup19.Text = "功能区";
             // 
-            // ReportToolRibbon
+            // ribbonPageGroup13
             // 
-            this.ReportToolRibbon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup7,
-            this.ribbonPageGroup20,
-            this.ribbonPageGroup21,
-            this.ribbonPageGroup22,
-            this.ribbonPageGroup23,
-            this.ribbonPageGroup24});
-            this.ReportToolRibbon.Name = "ReportToolRibbon";
-            this.ReportToolRibbon.Tag = ((short)(3));
-            this.ReportToolRibbon.Text = "报表中心";
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem36);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.ShowCaptionButton = false;
+            this.ribbonPageGroup13.Text = "帮助";
             // 
-            // ribbonPageGroup7
+            // HelpToolRibbon
             // 
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "Format";
+            this.HelpToolRibbon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup32,
+            this.ribbonPageGroup33});
+            this.HelpToolRibbon.Name = "HelpToolRibbon";
+            this.HelpToolRibbon.Text = "调度中心";
             // 
-            // ribbonPageGroup20
+            // ribbonPageGroup32
             // 
-            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-            this.ribbonPageGroup20.Text = "Format";
+            this.ribbonPageGroup32.ItemLinks.Add(this.barButtonItem46);
+            this.ribbonPageGroup32.ItemLinks.Add(this.barButtonItem48);
+            this.ribbonPageGroup32.Name = "ribbonPageGroup32";
+            this.ribbonPageGroup32.ShowCaptionButton = false;
+            this.ribbonPageGroup32.Text = "模拟调度";
             // 
-            // ribbonPageGroup21
+            // ribbonPageGroup33
             // 
-            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
-            this.ribbonPageGroup21.Text = "Format";
-            // 
-            // ribbonPageGroup22
-            // 
-            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
-            this.ribbonPageGroup22.Text = "Format";
-            // 
-            // ribbonPageGroup23
-            // 
-            this.ribbonPageGroup23.Name = "ribbonPageGroup23";
-            this.ribbonPageGroup23.Text = "Format";
-            // 
-            // ribbonPageGroup24
-            // 
-            this.ribbonPageGroup24.Name = "ribbonPageGroup24";
-            this.ribbonPageGroup24.Text = "Format";
+            this.ribbonPageGroup33.ItemLinks.Add(this.barButtonItem49);
+            this.ribbonPageGroup33.ItemLinks.Add(this.barButtonItem50);
+            this.ribbonPageGroup33.ItemLinks.Add(this.barButtonItem51);
+            this.ribbonPageGroup33.Name = "ribbonPageGroup33";
+            this.ribbonPageGroup33.ShowCaptionButton = false;
+            this.ribbonPageGroup33.Text = "调度管理";
             // 
             // BasicInfoToolRibbon
             // 
             this.BasicInfoToolRibbon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup25,
             this.ribbonPageGroup26,
-            this.ribbonPageGroup27,
-            this.ribbonPageGroup28,
-            this.ribbonPageGroup29,
-            this.ribbonPageGroup30,
-            this.ribbonPageGroup31});
+            this.ribbonPageGroup27});
             this.BasicInfoToolRibbon.Name = "BasicInfoToolRibbon";
             this.BasicInfoToolRibbon.Tag = ((short)(4));
             this.BasicInfoToolRibbon.Text = "基础档案";
             // 
             // ribbonPageGroup25
             // 
+            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem37);
+            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem38);
+            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem39);
             this.ribbonPageGroup25.Name = "ribbonPageGroup25";
-            this.ribbonPageGroup25.Text = "Format";
+            this.ribbonPageGroup25.ShowCaptionButton = false;
+            this.ribbonPageGroup25.Text = "终端管理";
             // 
             // ribbonPageGroup26
             // 
+            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem40);
+            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem41);
+            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem42);
             this.ribbonPageGroup26.Name = "ribbonPageGroup26";
-            this.ribbonPageGroup26.Text = "Format";
+            this.ribbonPageGroup26.ShowCaptionButton = false;
+            this.ribbonPageGroup26.Text = "路线管理";
             // 
             // ribbonPageGroup27
             // 
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem43);
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem44);
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem45);
             this.ribbonPageGroup27.Name = "ribbonPageGroup27";
-            this.ribbonPageGroup27.Text = "Format";
+            this.ribbonPageGroup27.ShowCaptionButton = false;
+            this.ribbonPageGroup27.Text = "管理员管理";
             // 
-            // ribbonPageGroup28
+            // ribbonPage1
             // 
-            this.ribbonPageGroup28.Name = "ribbonPageGroup28";
-            this.ribbonPageGroup28.Text = "Format";
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup15});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "信息服务";
             // 
-            // ribbonPageGroup29
+            // ribbonPageGroup14
             // 
-            this.ribbonPageGroup29.Name = "ribbonPageGroup29";
-            this.ribbonPageGroup29.Text = "Format";
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem52);
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem53);
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem54);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.ShowCaptionButton = false;
+            this.ribbonPageGroup14.Text = "消息编辑";
             // 
-            // ribbonPageGroup30
+            // ribbonPageGroup15
             // 
-            this.ribbonPageGroup30.Name = "ribbonPageGroup30";
-            this.ribbonPageGroup30.Text = "Format";
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem47);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.ShowCaptionButton = false;
+            this.ribbonPageGroup15.Text = "功能区";
             // 
-            // ribbonPageGroup31
+            // ribbonPage2
             // 
-            this.ribbonPageGroup31.Name = "ribbonPageGroup31";
-            this.ribbonPageGroup31.Text = "Format";
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup17,
+            this.ribbonPageGroup16});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "系统设置";
             // 
-            // HelpToolRibbon
+            // ribbonPageGroup17
             // 
-            this.HelpToolRibbon.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup32,
-            this.ribbonPageGroup33,
-            this.ribbonPageGroup34,
-            this.ribbonPageGroup35,
-            this.ribbonPageGroup36,
-            this.ribbonPageGroup37,
-            this.ribbonPageGroup38,
-            this.ribbonPageGroup39});
-            this.HelpToolRibbon.Name = "HelpToolRibbon";
-            this.HelpToolRibbon.Text = "帮助";
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem56);
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem57);
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem58);
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem59);
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem60);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            this.ribbonPageGroup17.ShowCaptionButton = false;
+            this.ribbonPageGroup17.Text = "设置与帮助";
             // 
-            // ribbonPageGroup32
+            // ribbonPageGroup16
             // 
-            this.ribbonPageGroup32.Name = "ribbonPageGroup32";
-            this.ribbonPageGroup32.Text = "Format";
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem55);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
+            this.ribbonPageGroup16.ShowCaptionButton = false;
+            this.ribbonPageGroup16.Text = "登录状态";
             // 
-            // ribbonPageGroup33
+            // repositoryItemComboBox1
             // 
-            this.ribbonPageGroup33.Name = "ribbonPageGroup33";
-            this.ribbonPageGroup33.Text = "Format";
-            // 
-            // ribbonPageGroup34
-            // 
-            this.ribbonPageGroup34.Name = "ribbonPageGroup34";
-            this.ribbonPageGroup34.Text = "Format";
-            // 
-            // ribbonPageGroup35
-            // 
-            this.ribbonPageGroup35.Name = "ribbonPageGroup35";
-            this.ribbonPageGroup35.Text = "Format";
-            // 
-            // ribbonPageGroup36
-            // 
-            this.ribbonPageGroup36.Name = "ribbonPageGroup36";
-            this.ribbonPageGroup36.Text = "Format";
-            // 
-            // ribbonPageGroup37
-            // 
-            this.ribbonPageGroup37.Name = "ribbonPageGroup37";
-            this.ribbonPageGroup37.Text = "Format";
-            // 
-            // ribbonPageGroup38
-            // 
-            this.ribbonPageGroup38.Name = "ribbonPageGroup38";
-            this.ribbonPageGroup38.Text = "Format";
-            // 
-            // ribbonPageGroup39
-            // 
-            this.ribbonPageGroup39.Name = "ribbonPageGroup39";
-            this.ribbonPageGroup39.Text = "Format";
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // contextMenuStrip
             // 
@@ -632,7 +1258,7 @@ namespace CTTC_ITS_Manage
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 226;
             this.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl.Size = new System.Drawing.Size(226, 547);
+            this.navBarControl.Size = new System.Drawing.Size(226, 533);
             this.navBarControl.SmallImages = this.navbarImageList;
             this.navBarControl.StoreDefaultPaintStyleName = true;
             this.navBarControl.TabIndex = 1;
@@ -655,7 +1281,7 @@ namespace CTTC_ITS_Manage
             this.navBarGroupControlContainer1.Controls.Add(this.ManageOnlineTree);
             this.navBarGroupControlContainer1.Controls.Add(this.navBarControl1);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(226, 288);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(226, 274);
             this.navBarGroupControlContainer1.TabIndex = 0;
             // 
             // ManageOnlineTree
@@ -674,7 +1300,7 @@ namespace CTTC_ITS_Manage
             this.ManageOnlineTree.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2});
-            this.ManageOnlineTree.Size = new System.Drawing.Size(226, 288);
+            this.ManageOnlineTree.Size = new System.Drawing.Size(226, 274);
             this.ManageOnlineTree.TabIndex = 1;
             // 
             // navBarControl1
@@ -684,7 +1310,7 @@ namespace CTTC_ITS_Manage
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 226;
-            this.navBarControl1.Size = new System.Drawing.Size(226, 288);
+            this.navBarControl1.Size = new System.Drawing.Size(226, 274);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -803,17 +1429,18 @@ namespace CTTC_ITS_Manage
             // 
             this.splitContainerControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.splitContainerControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl.Location = new System.Drawing.Point(0, 133);
+            this.splitContainerControl.Location = new System.Drawing.Point(0, 147);
             this.splitContainerControl.Name = "splitContainerControl";
             this.splitContainerControl.Padding = new System.Windows.Forms.Padding(6);
             this.splitContainerControl.Panel1.Controls.Add(this.navBarControl);
             this.splitContainerControl.Panel1.Text = "Panel1";
             this.splitContainerControl.Panel2.Controls.Add(this.xtraTabControl1);
             this.splitContainerControl.Panel2.Text = "Panel2";
-            this.splitContainerControl.Size = new System.Drawing.Size(1100, 563);
+            this.splitContainerControl.Size = new System.Drawing.Size(1100, 549);
             this.splitContainerControl.SplitterPosition = 226;
             this.splitContainerControl.TabIndex = 0;
             this.splitContainerControl.Text = "splitContainerControl1";
+            this.splitContainerControl.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainerControl_Paint);
             // 
             // xtraTabControl1
             // 
@@ -821,7 +1448,7 @@ namespace CTTC_ITS_Manage
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.NameTabPage;
-            this.xtraTabControl1.Size = new System.Drawing.Size(853, 547);
+            this.xtraTabControl1.Size = new System.Drawing.Size(853, 533);
             this.xtraTabControl1.TabIndex = 1;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.NameTabPage});
@@ -831,17 +1458,16 @@ namespace CTTC_ITS_Manage
             // 
             this.NameTabPage.Controls.Add(this.MainMap);
             this.NameTabPage.Name = "NameTabPage";
-            this.NameTabPage.Size = new System.Drawing.Size(847, 518);
+            this.NameTabPage.Size = new System.Drawing.Size(847, 504);
             this.NameTabPage.Text = "在线实时监控";
             // 
             // MainMap
             // 
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
-            this.MainMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainMap.GrayScaleMode = false;
             this.MainMap.LevelsKeepInMemmory = 5;
-            this.MainMap.Location = new System.Drawing.Point(0, 0);
+            this.MainMap.Location = new System.Drawing.Point(-22, -9);
             this.MainMap.MarkersEnabled = true;
             this.MainMap.MaxZoom = 18;
             this.MainMap.MinZoom = 0;
@@ -948,6 +1574,7 @@ namespace CTTC_ITS_Manage
             this.popupControlContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
             this.navBarControl.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
@@ -1016,44 +1643,93 @@ namespace CTTC_ITS_Manage
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
         private DevExpress.XtraBars.Ribbon.RibbonPage ReportToolRibbon;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
         private DevExpress.XtraBars.Ribbon.RibbonPage BasicInfoToolRibbon;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup27;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup28;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup29;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup30;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup31;
         private DevExpress.XtraBars.Ribbon.RibbonPage HelpToolRibbon;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup32;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup33;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup34;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup35;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup36;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup37;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup38;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup39;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private UserControl.StreetLineControl streetLineControl1;
         private shishi shishi1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem22;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem23;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem24;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem26;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem27;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem25;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem28;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem29;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem30;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem31;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem32;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem33;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem34;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem35;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem36;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem37;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem38;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem39;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem40;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem41;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem42;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem43;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem44;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem45;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem46;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem48;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem49;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem50;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem51;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem47;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem52;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem53;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem54;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem55;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem56;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem57;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem58;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem59;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem60;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
 
     }
 }
